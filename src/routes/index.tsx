@@ -175,7 +175,9 @@ function RoleRotator() {
 
 function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [touched, setTouched] = useState<Record<string, boolean>>({});
+  const [touched, setTouched] = useState<{ name?: boolean; email?: boolean; message?: boolean }>(
+    {},
+  );
   const [sent, setSent] = useState(false);
 
   const errors = {
