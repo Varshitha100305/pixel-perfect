@@ -78,6 +78,12 @@
 
   body {
     background-color: var(--background);
+    background-image:
+      linear-gradient(oklch(0.1 0.01 20 / 55%), oklch(0.1 0.01 20 / 55%)),
+      url("/__l5e/assets-v1/796099cd-a6e0-4f47-9011-1eac9d1d589b/bg-red-gradient.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: var(--foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
